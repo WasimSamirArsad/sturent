@@ -1,0 +1,128 @@
+
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>Home Rent</title>
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+        
+        <style>
+            .logo_sturent{
+                color: orange;
+                font-size: 35px;
+                font-weight: bold;
+                font-family: fangsong;
+            }
+        </style>
+</head>
+<body>
+<div class="container_1">
+<div class="head">
+<div class="container">
+<div  class="navbar">
+<div class="Logo">
+                <a href="Index.html" class="logo_sturent">Sturent</a>
+            </div>
+            <nav>
+                <ul id="MenuItems">
+                    <li><a href="Index.html">Home</a></li>
+                    <li ><a href="Collection.html">Collection</a></li>
+                    <li class="active">
+                    <a href="about.html">About</a></li>
+                    <!-- <li ><a href="contact_us.html">Contact</a></li> -->
+                    <!-- <li><a href="Account.html">Account</a></li> -->
+                    <li><a href="file:///C:/Users/user/OneDrive/Desktop/website/contact_us.html">Logout</a></li>
+                </ul>
+            </nav>
+             <a href="Index.html"><img src="Image\SideLogo.png" class="Save" width="30px" height="30px"></a> 
+            <img src="Image\MenuIcon.png" class="menu-icon"onclick="menutoggle()">
+        </div>       
+    </div>
+</div>
+
+<body class="about_body">
+    <div class="about-section1">
+        <div class="inner-container1">
+            <h1>About Us</h1>
+            <p class="text1">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus velit ducimus, enim inventore earum, eligendi nostrum pariatur necessitatibus eius dicta a voluptates sit deleniti autem error eos totam nisi neque voluptates sit deleniti autem error eos totam nisi neque.
+            </p>
+            <div class="skills1">
+                <span>Web Design</span>
+                <span>Photoshop & Illustrator</span>
+                <span>Coding</span>
+            </div>
+        </div>
+</div>
+
+    <!----------------------  FOOTER  ------------------>
+
+<div class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-col-2">
+                        <a href="Index.html" class="logo_sturent">Sturent</a>
+                        <p>Our purpose is to provide you a better Home</p>
+                    </div> 
+                    <div class="footer-col-3">
+                       
+                    </div>
+                    <!-- ----------------Social-menu-------- -->
+                    <div class="social-menu">
+                        <h1>Follow Us</h1>
+                        <ul>
+                          <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                          <li><a href="#"><i class="fab fa-whatsapp"></i></a></li>
+                          <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                          <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                          <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                        </ul>
+                      </div>
+                </div>
+                <hr>
+            </div>
+        </div>
+        <!------------ js for toggle menu ---------------->
+        <script>
+            var MenuItems=document.getElementById("MenuItems");
+            MenuItems.style.maxHeight="0px";
+            function menutoggle(){
+                if(MenuItems.style.maxHeight=="0px")
+                {
+                    MenuItems.style.maxHeight="200px"
+                }
+                else
+                {
+                    MenuItems.style.maxHeight="0px"
+                }
+            }
+            const inputs = document.querySelectorAll(".input");
+
+function focusFunc() {
+  let parent = this.parentNode;
+  parent.classList.add("focus");
+}
+
+function blurFunc() {
+  let parent = this.parentNode;
+  if (this.value == "") {
+    parent.classList.remove("focus");
+  }
+}
+
+inputs.forEach((input) => {
+  input.addEventListener("focus", focusFunc);
+  input.addEventListener("blur", blurFunc);
+});
+       
+        </script>
+        <!-- <script src="app.js"></script> -->
+</body>
+</html>
+
+
+
+

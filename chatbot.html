@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .logo_sturent{
+            color: orange;
+            font-size: 35px;
+            font-weight: bold;
+            font-family: fangsong;
+        }
+
+
+
+    .chat-container{
+        height: 30rem;
+    }
+.main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.chat-container {
+    width: 400px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.chatbox {
+    flex: 1;
+    padding: 10px;
+    overflow-y: auto;
+    border-bottom: 1px solid #ddd;
+}
+
+.chat-log {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.chat-log div {
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+.user-message {
+    background-color: #0084ff;
+    color: white;
+    align-self: flex-end;
+}
+
+.bot-message {
+    background-color: #e5e5ea;
+    color: black;
+    align-self: flex-start;
+}
+
+.input-container {
+    display: flex;
+    border-top: 1px solid #ddd;
+}
+
+input[type="text"] {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    outline: none;
+}
+
+button {
+    padding: 10px;
+    background-color: #0084ff;
+    border: none;
+    color: white;
+    cursor: pointer;
+    outline: none;
+}
+
+button:hover {
+    background-color: #005bb5;
+}
+
+
+    </style>
+</head>
+<body>
+    
+    <div class="head">
+        <div class="container">
+        <div  class="navbar">
+        <div class="Logo">
+                        <a href="Index.html" class="logo_sturent">Sturent</a>
+                    </div>
+                    <nav>
+                        <ul id="MenuItems">
+                            <li><a href="Index.html">Home</a></li>
+                            <li ><a href="Collection.html">Collection</a></li>
+                            <li class="active">
+                            <a href="about.html">About</a></li>
+                            <!-- <li ><a href="contact_us.html">Contact</a></li> -->
+                            <!-- <li><a href="Account.html">Account</a></li> -->
+                            <li><a href="file:///C:/Users/user/OneDrive/Desktop/website/contact_us.html">Logout</a></li>
+                        </ul>
+                    </nav>
+                     <a href="Index.html"><img src="Image\SideLogo.png" class="Save" width="30px" height="30px"></a> 
+                    <img src="Image\MenuIcon.png" class="menu-icon"onclick="menutoggle()">
+                </div>       
+            </div>
+        </div>
+<div class="main">
+    <iframe width="350" height="430" allow="microphone;" src="https://console.dialogflow.com/api-client/demo/embedded/8f773dc1-73a9-4b19-9b9c-5a64484bc326"></iframe>
+     </div>
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <div class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-col-2">
+                        <a href="Index.html" class="logo_sturent">Sturent</a>
+                        <p>Our purpose is to provide you a better Home</p>
+                    </div> 
+                    <div class="footer-col-3">
+                       
+                    </div>
+                    <!-- ----------------Social-menu-------- -->
+                    <div class="social-menu">
+                        <h1>Follow Us</h1>
+                        <ul>
+                          <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                          <li><a href="#"><i class="fab fa-whatsapp"></i></a></li>
+                          <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                          <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                          <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                        </ul>
+                      </div>
+                </div>
+                <hr>
+            </div>
+        </div>
+
+
+        </script>
+</body>
+</html>
